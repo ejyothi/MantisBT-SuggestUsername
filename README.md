@@ -3,8 +3,12 @@ The plugin converts Users Monitoring text control in bug view page to an AJAX po
 
 This MantisBT plugin uses jQuery TagsInput plugin: https://github.com/xoxco/jQuery-Tags-Input
 
-# Pre-requisites
-MantisBT v1.3.0
+# Version Compatibility
+|MantisBT Version|Plugin Version|
+|----------------|--------------|
+|v1.3.0          |v0.1          |
+|v2.0.0          |v0.2          |
+|v2.2.0          |v0.3          |
 
 # Installation Steps
 1. Clone the repository from Github to the plugins folder
