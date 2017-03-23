@@ -4,7 +4,7 @@ class SuggestUsernamePlugin extends MantisPlugin {
     function register() {
         $this->name        = 'Suggest Username';
         $this->description = 'Convert users monitoring text input to an ajax control';
-        $this->version     = '0.3';
+        $this->version     = '0.4';
         $this->requires    = array(
 						'MantisCore' => '2.2.0',
 						'jQueryUI' => '1.12.0',
