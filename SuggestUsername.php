@@ -1,8 +1,8 @@
 <?php
-class AjaxUserMonitoringPlugin extends MantisPlugin {
+class SuggestUsernamePlugin extends MantisPlugin {
 
     function register() {
-        $this->name        = 'Ajax User Monitoring';
+        $this->name        = 'Suggest Username';
         $this->description = 'Convert users monitoring text input to an ajax control';
         $this->version     = '0.3';
         $this->requires    = array(
