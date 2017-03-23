@@ -7,6 +7,7 @@ class SuggestUsernamePlugin extends MantisPlugin {
         $this->version     = '0.3';
         $this->requires    = array(
 						'MantisCore' => '2.2.0',
+						'jQueryUI' => '1.12.0',
 						);
         $this->author      = 'Manilal K M';
         $this->contact     = 'manilal@ejyothi.com';
@@ -15,15 +16,13 @@ class SuggestUsernamePlugin extends MantisPlugin {
 
     function hooks() {
         $hooks = array(
-				'EVENT_VIEW_BUG_EXTRA' => 'show_tagsinput',
+				'EVENT_LAYOUT_BODY_END' => 'show_tagsinput',
                 );
         return $hooks;
     }
 
 	function show_tagsinput( $p_event, $p_bug_id )
 	{
-		print '<script type="text/javascript" src="' . plugin_file('jquery-ui.min.js').'"></script>';
-		print '<link type="text/css" href="'.plugin_file('jquery-ui.min.css').'" rel="stylesheet" />';
 		print '<script type="text/javascript" src="' . plugin_file('jquery.tagsinput.min.js').'"></script>';
 		print '<link type="text/css" href="'.plugin_file('jquery.tagsinput.min.css').'" rel="stylesheet" />';
 		print '<script type="text/javascript" src="' . plugin_file('plugin.js').'"></script>';
