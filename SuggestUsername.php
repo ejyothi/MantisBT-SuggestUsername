@@ -16,7 +16,7 @@ class SuggestUsernamePlugin extends MantisPlugin {
 
     function hooks() {
         $hooks = array(
-				'EVENT_LAYOUT_BODY_END' => 'show_tagsinput',
+				'EVENT_VIEW_BUG_EXTRA' => 'show_tagsinput',
                 );
         return $hooks;
     }
